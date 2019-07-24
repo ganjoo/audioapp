@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main_layout"
+        android:padding="10dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/player_title"
+            style="@style/ContentText"
+            android:text=""
+            android:textColor="@color/textDark"
+            android:textSize="@dimen/title_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/player_subtitle"
+            style="@style/ContentText"
+            android:text="@string/subtitle"
+            android:textColor="@color/textLight"
+            android:textSize="@dimen/caption_text_size"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/player_paragraph1"
+            style="@style/ContentText"
+            android:text="@string/paragraph1"
+            android:textColor="@color/textDark"
+            android:textSize="@dimen/paragragh_text_size"
+            android:visibility="gone" />
+
+        <com.google.vr.sdk.widgets.video.VrVideoView
+            android:id="@+id/player_video_view"
+            android:layout_width="match_parent"
+            android:layout_height="350dip" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <!-- Seeking UI & progress indicator.-->
+            <SeekBar
+                android:id="@+id/player_seek_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="8" />
+
+            <ImageButton
+                android:id="@+id/player_volume_toggle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:paddingStart="0dp"
+                android:paddingTop="4dp"
+                android:src="@drawable/volume_on" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <!-- Seeking UI & progress indicator.-->
+
+            <ProgressBar
+                android:id="@+id/player_progressbar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:paddingStart="0dp"
+                android:paddingTop="4dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/player_status_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingEnd="32dp"
+            android:paddingStart="32dp"
+            android:text="Loading Video..."
+            android:textSize="@dimen/caption_text_size" />
+
+        <TextView
+            android:id="@+id/player_paragraph2"
+            style="@style/ContentText"
+            android:text="@string/paragraph2"
+            android:textColor="@color/textDark"
+            android:textSize="@dimen/paragragh_text_size"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/player_source"
+            style="@style/ContentText"
+            android:textColor="@color/textDark"
+            android:textSize="@dimen/paragragh_text_size"
+            android:visibility="gone" />
+    </LinearLayout>
+</ScrollView>

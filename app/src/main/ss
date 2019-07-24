@@ -1,0 +1,2 @@
+python melody_rnn_generate --config=attention_rnn --bundle_file=E:/sources/attention_rnn.mag --output_dir=E:/sources --num_outputs=10 --num_steps=128 --primer_melody="[60]"
+polyphony_rnn_generate --bundle_file=E:/sources/polyphony.mag --output_dir=E:/sources --num_outputs=10 --num_steps=128 --primer_pitches="[67,64,60]" --condition_on_primer=true --inject_primer_during_generation=false

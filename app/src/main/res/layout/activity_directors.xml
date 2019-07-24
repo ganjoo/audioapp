@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow_bg"
+    android:orientation="vertical"
+    tools:context=".DirectorsActivity">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+
+        android:visibility="visible">
+
+        <ImageButton
+            android:id="@+id/btn_back_zoo_directors"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:elevation="9dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/backicon" />
+
+        <ImageView
+            android:id="@+id/imageButton2"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:adjustViewBounds="false"
+            android:background="@null"
+            android:cropToPadding="false"
+
+            android:elevation="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/header" />
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rlay_dir1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_weight="5"
+        android:backgroundTint="@color/accent"
+        android:fadingEdge="vertical"
+        android:fadingEdgeLength="@dimen/activity_vertical_margin"
+        android:orientation="horizontal"
+        android:padding="5dip"
+        android:visibility="gone">
+
+        <!--  ListRow Left sied Thumbnail image -->
+        <LinearLayout
+            android:id="@+id/thumbnail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dip"
+            android:padding="3dip">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/rk_singh"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp" />
+
+        </LinearLayout>
+
+        <!-- Title Of Song-->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/thumbnail"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:text="Mr. R.K. Singh"
+            android:textColor="#040404"
+            android:textSize="25dip"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <!-- Artist Name -->
+        <TextView
+            android:id="@+id/artist"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginTop="1dip"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:text="Director, Nawab Wajid Ali Shah Zoological Garden, Lucknow "
+            android:textColor="#343434" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rlay_dir2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+        android:padding="5dip"
+        android:visibility="gone">
+
+        <!--  ListRow Left sied Thumbnail image -->
+        <LinearLayout
+            android:id="@+id/thumbnail2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dip"
+            android:padding="3dip">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image2"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/utkarsh"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp" />
+
+        </LinearLayout>
+
+        <!-- Title Of Song-->
+        <TextView
+            android:id="@+id/title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/thumbnail2"
+            android:layout_toRightOf="@+id/thumbnail2"
+            android:text="Dr. Utkarsh Shukla "
+            android:textColor="#040404"
+            android:textSize="25dip"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <!-- Artist Name -->
+        <TextView
+            android:id="@+id/artist2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title2"
+            android:layout_marginTop="1dip"
+            android:layout_toRightOf="@+id/thumbnail2"
+            android:text="Dy. Director/Vet. Officer Nawab Wajid Ali Shah Zoological Garden, Lucknow"
+            android:textColor="#343434" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_director_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/big_padding"
+        android:visibility="gone" />
+
+    <WebView
+        android:id="@+id/news_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/rel_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:visibility="visible">
+
+        <ImageButton
+            android:id="@+id/btn_open_drawer_web_view"
+            android:layout_width="60dp"
+            android:layout_height="48dp"
+
+
+            android:background="@drawable/open_drawer"
+            android:elevation="9dp" />
+
+        <ImageView
+            android:id="@+id/imageButton2"
+            android:layout_width="match_parent"
+
+            android:layout_height="54dp"
+            android:adjustViewBounds="false"
+            android:background="@null"
+            android:cropToPadding="false"
+
+            android:elevation="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/header" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="40"
+        android:visibility="visible"
+        android:layout_below="@+id/rel_header">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none"
+            android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+
+            <TableLayout
+                android:id="@+id/table"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="15">
+
+                <TableRow
+                    android:id="@+id/entryfee"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#6ba53a">
+
+                    <TextView
+                        android:id="@+id/Category"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3pt"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="5pt"
+                        android:text="Do's and Don'ts"
+                        android:textColor="@color/cardview_light_background"
+                        android:textSize="18sp"
+                        android:typeface="normal" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/entryNote"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5pt"
+                        android:text="Following activities are an offence in the Lucknow Zoo"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#c0c0c0" />
+
+                <TableRow
+                    android:id="@+id/Point1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2pt">
+
+                    <TextView
+                        android:id="@+id/point1subtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1pt"
+                        android:paddingLeft="5pt"
+                        android:text="1. Carrying of Polythene"
+                        android:textSize="15sp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/Point2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2pt">
+
+                    <TextView
+                        android:id="@+id/point2subtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1pt"
+                        android:paddingLeft="5pt"
+                        android:text="2. Carrying of fire arms or pets"
+                        android:textSize="15sp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/Point3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2pt">
+
+                    <TextView
+                        android:id="@+id/point3subtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1pt"
+                        android:paddingLeft="5pt"
+                        android:text="3. Making fire and cooking"
+                        android:textSize="15sp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/Point4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2pt">
+
+                    <TextView
+                        android:id="@+id/point4subtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1pt"
+                        android:paddingLeft="5pt"
+                        android:text="4. Playing of radio transistor and tape recorders"
+                        android:textSize="15sp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/Point5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2pt">
+
+                    <TextView
+                        android:id="@+id/point5subtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1pt"
+                        android:paddingLeft="5pt"
+                        android:text="5. Teasing Animals"
+                        android:textSize="15sp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/Point6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2pt">
+
+                    <TextView
+                        android:id="@+id/point6subtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1pt"
+                        android:paddingLeft="5pt"
+                        android:text="6. Making loud noise and Playing music"
+                        android:textSize="15sp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/Point7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2pt">
+
+                    <TextView
+                        android:id="@+id/point7subtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1pt"
+                        android:paddingLeft="5pt"
+                        android:text="7. Consumption of intoxicated materials"
+                        android:textSize="15sp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/Point8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2pt">
+
+                    <TextView
+                        android:id="@+id/point8subtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1pt"
+                        android:paddingLeft="5pt"
+                        android:text="8. Plucking of flowers or causing harm to trees and gardens"
+                        android:textSize="15sp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/Point9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2pt">
+
+                    <TextView
+                        android:id="@+id/point9subtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1pt"
+                        android:paddingLeft="5pt"
+                        android:text="9. Feeding Animals"
+                        android:textSize="15sp" />
+                </TableRow>
+
+
+            </TableLayout>
+
+        </LinearLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+

@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="40"
+        android:visibility="visible">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none"
+            android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+
+        <TableLayout
+            android:id="@+id/table"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="32pt"
+            android:layout_weight="15">
+
+            <TableRow
+                android:id="@+id/entryfee"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#6ba53a">
+
+                <TextView
+                    android:id="@+id/Category"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3pt"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="5pt"
+                    android:text="Entry Fee"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="18sp"
+                    android:typeface="normal" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/entryNote"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5pt"
+                    android:text="Note:  Lucknow Zoological Park is closed on every  Monday and the day of Holi Festival for Visitors."
+                    android:textSize="14sp" />
+            </TableRow>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#c0c0c0" />
+
+            <TableRow
+                android:id="@+id/adult"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2pt">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/Adult"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1pt"
+                        android:layout_weight="1"
+                        android:paddingLeft="5pt"
+                        android:text="Adult"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/Adultfee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50pt"
+                        android:layout_weight="1"
+                        android:gravity="left|center_horizontal"
+                        android:text="INR 72.00"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </TableRow>
+
+
+            <TableRow
+                android:id="@+id/agelimitadult"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2pt">
+
+                <TextView
+                    android:id="@+id/adultsubtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1pt"
+                    android:paddingLeft="5pt"
+                    android:text="for above 12 years of age"
+                    android:textSize="10sp" />
+            </TableRow>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#c0c0c0" />
+
+            <TableRow
+                android:id="@+id/children"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2pt">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/Child"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1pt"
+                        android:layout_weight="1"
+                        android:paddingLeft="5pt"
+                        android:text="Children"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/Childfee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50pt"
+                        android:layout_weight="1"
+                        android:gravity="left|center_horizontal"
+                        android:text="INR 36.00"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </TableRow>
+
+
+            <TableRow
+                android:id="@+id/agelimitchildren"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2pt">
+
+                <TextView
+                    android:id="@+id/childsubtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1pt"
+                    android:paddingLeft="5pt"
+                    android:text="for 5 years to 12 years age"
+                    android:textSize="10sp" />
+            </TableRow>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#c0c0c0" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2pt">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/Adultpackage"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1pt"
+                        android:layout_weight="1"
+                        android:paddingLeft="5pt"
+                        android:text="Package"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/Adultpackagefee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50pt"
+                        android:layout_weight="1"
+                        android:gravity="left|center_horizontal"
+                        android:text="INR 90.00"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2pt">
+
+                <TextView
+                    android:id="@+id/adulpackagetsubtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1pt"
+                    android:paddingLeft="5pt"
+                    android:text="for above 12 years of age"
+                    android:textSize="10sp" />
+            </TableRow>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#c0c0c0" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2pt">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/Childpackage"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1pt"
+                        android:layout_weight="1"
+                        android:paddingLeft="5pt"
+                        android:text="Package"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/Childpackagefee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50pt"
+                        android:layout_weight="1"
+                        android:gravity="left|center_horizontal"
+                        android:text="INR 45.00"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2pt">
+
+                <TextView
+                    android:id="@+id/childpackagesubtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1pt"
+                    android:paddingLeft="5pt"
+                    android:text="for 5 years to 12 years age"
+                    android:textSize="10sp" />
+            </TableRow>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#c0c0c0" />
+
+            <TableRow
+                android:id="@+id/Noteforparents"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5pt"
+                    android:text="Free Entry for children below 5 years"
+                    android:textSize="14sp" />
+            </TableRow>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#c0c0c0" />
+
+            <TableRow
+                android:id="@+id/videocamera"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2pt">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/VideoCameraTicket"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1pt"
+                        android:layout_weight="1"
+                        android:paddingLeft="5pt"
+                        android:text="Video Camera"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/Videocamerafee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50pt"
+                        android:layout_weight="1"
+                        android:gravity="left|center_horizontal"
+                        android:text="INR 100.00"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </TableRow>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#c0c0c0" />
+
+            <TableRow
+                android:id="@+id/Noteforschoolstudents"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/Forschoolstudent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5pt"
+                    android:text="For school students- 10% concession on groups  above 50 students"
+                    android:textSize="14sp" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#6ba53a">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3pt"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="5pt"
+                    android:text="Morning Walks Pass"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="18sp"
+                    android:typeface="normal" />
+            </TableRow>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#c0c0c0" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2pt">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1pt"
+                        android:layout_weight="1"
+                        android:paddingLeft="5pt"
+                        android:text="For a month"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50pt"
+                        android:layout_weight="1"
+                        android:gravity="left|center_horizontal"
+                        android:text="INR 100.0"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </TableRow>
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#c0c0c0" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2pt">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1pt"
+                        android:layout_weight="1"
+                        android:paddingLeft="5pt"
+                        android:text="For a year"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50pt"
+                        android:layout_weight="1"
+                        android:gravity="left|center_horizontal"
+                        android:text="INR 500.0"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </TableRow>
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#c0c0c0" />
+
+            <TableRow
+                android:id="@+id/VisitingHours"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#6ba53a">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3pt"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="5pt"
+                    android:text="Visiting Hours"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="18sp"
+                    android:typeface="normal" />
+            </TableRow>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#c0c0c0" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2pt">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1pt"
+                        android:layout_weight="1"
+                        android:paddingLeft="5pt"
+                        android:text="Feb - Apr"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50pt"
+                        android:layout_weight="1"
+                        android:gravity="left|center_horizontal"
+                        android:text="8.30 am to 5.30 pm"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </TableRow>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#c0c0c0" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2pt">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1pt"
+                        android:layout_weight="1"
+                        android:paddingLeft="5pt"
+                        android:text="May - Jul"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50pt"
+                        android:layout_weight="1"
+                        android:gravity="left|center_horizontal"
+                        android:text="8.00 am to 6.00 pm"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </TableRow>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#c0c0c0" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2pt">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1pt"
+                        android:layout_weight="1"
+                        android:paddingLeft="5pt"
+                        android:text="Aug - Oct"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50pt"
+                        android:layout_weight="1"
+                        android:gravity="left|center_horizontal"
+                        android:text="8.30 am to 5.30 pm "
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </TableRow>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#c0c0c0" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2pt">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1pt"
+                        android:layout_weight="1"
+                        android:paddingLeft="5pt"
+                        android:text="Nov - Jan"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50pt"
+                        android:layout_weight="1"
+                        android:gravity="left|center_horizontal"
+                        android:text="8.30 am to 5.00 pm "
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </TableRow>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#c0c0c0" />
+
+            <TableRow
+                android:id="@+id/VisitingHoursforMorningWalks"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#6ba53a">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3pt"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="5pt"
+                    android:text="Visiting Hours for Morning Walks"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="18sp"
+                    android:typeface="normal" />
+            </TableRow>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#c0c0c0" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2pt">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1pt"
+                        android:layout_weight="1"
+                        android:paddingLeft="5pt"
+                        android:text="Mar - Sep"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50pt"
+                        android:layout_weight="1"
+                        android:gravity="left|center_horizontal"
+                        android:text="5.00 am to 7.00 am"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </TableRow>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#c0c0c0" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2pt">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1pt"
+                        android:layout_weight="1"
+                        android:paddingLeft="5pt"
+                        android:text="Oct - Feb"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50pt"
+                        android:layout_weight="1"
+                        android:gravity="left|center_horizontal"
+                        android:text="6.00 am to 8.00 am"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </TableRow>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#c0c0c0" />
+
+            <TableRow
+                android:id="@+id/Zoomap"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#6ba53a">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3pt"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="5pt"
+                    android:text="Zoo Map"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="18sp"
+                    android:typeface="normal" />
+            </TableRow>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#c0c0c0" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/zoo_map_google"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100pt"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/zoo_map_google" />
+                </LinearLayout>
+            </TableRow>
+
+
+        </TableLayout>
+
+        </LinearLayout>
+        </ScrollView>
+
+        <ImageButton
+            android:id="@+id/btn_back_about_us"
+            android:layout_width="16dp"
+            android:layout_height="20dp"
+
+
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/menu_title"
+            android:background="@null"
+            android:elevation="9dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/backicon" />
+
+        <ImageView
+            android:id="@+id/imageButton2"
+            android:clickable = "true"
+            android:layout_width="match_parent"
+            android:layout_height="38pt"
+            android:adjustViewBounds="false"
+            android:background="@null"
+            android:cropToPadding="false"
+            android:elevation="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/zoo_information_header" />
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/play_movie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@android:color/holo_orange_light"
+        android:text="PLAY ECOTOURISM MOVIE"
+        android:textColor="@android:color/white" />
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.player.YouTubePlayerView
+        android:id="@+id/youtube_player_view"
+        android:layout_width="match_parent"
+        android:layout_height="205dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="4">
+
+
+    </com.pierfrancescosoffritti.androidyoutubeplayer.player.YouTubePlayerView>
+
+    <LinearLayout
+        android:id="@+id/row_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_english_film"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="View in English" />
+
+        <Button
+            android:id="@+id/btn_hindi_film"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="हिंदी में देखें" />
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/view_circuit_grid"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_exit_video"
+        android:layout_width="164dp"
+        android:layout_height="46dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:background="@drawable/exit_button" />
+
+    <Button
+        android:id="@+id/play_walkthrough"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@android:color/holo_orange_light"
+        android:text="ENTER WALKTHROUGH"
+        android:textColor="@android:color/white"
+        android:visibility="gone" />
+
+
+</LinearLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+
+
+            android:layout_marginLeft="8pt"
+            android:layout_marginTop="8pt"
+            android:background="@drawable/open_drawer"
+            android:elevation="9dp"
+            android:src="@drawable/menu_dropdown_new" />
+
+        <ImageView
+            android:id="@+id/imageButton2"
+            android:layout_width="match_parent"
+
+            android:layout_height="81dp"
+            android:adjustViewBounds="false"
+            android:alpha="0.0"
+            android:background="@null"
+
+            android:cropToPadding="false"
+            android:elevation="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/selectanoption" />
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20pt"
+        android:layout_marginTop="30pt"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical">
+
+
+        `
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/vrzone_new"
+                android:layout_width="match_parent"
+
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/vrzone_new"
+                android:visibility="visible" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageButton
+                android:id="@+id/arzone_new"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:contentDescription="TODO"
+                android:scaleType="fitXY"
+                android:src="@drawable/arzone_new"
+                android:visibility="visible" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageButton
+                android:id="@+id/audiotour_new"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:contentDescription="TODO"
+                android:scaleType="fitXY"
+                android:src="@drawable/audiotour_new"
+                android:visibility="visible" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageButton
+                android:id="@+id/photobooth_new"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:contentDescription="TODO"
+                android:scaleType="fitXY"
+                android:src="@drawable/photobooth_new"
+                android:visibility="visible" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageButton
+                android:id="@+id/zooinfo_new"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:contentDescription="TODO"
+                android:scaleType="fitXY"
+                android:src="@drawable/zooinfo_new"
+                android:visibility="visible" />
+        </TableRow>
+
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btn_cause_crash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="24dp"
+        android:text="Cause Crash"
+        android:visibility="gone" />
+
+
+</LinearLayout>

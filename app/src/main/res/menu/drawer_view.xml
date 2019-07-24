@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+
+        <!--<item-->
+            <!--app:actionLayout="@layout/ic_layout_1"-->
+            <!--android:id="@+id/action_share"-->
+            <!--android:title=""-->
+            <!--app:showAsAction="always"-->
+            <!--/>-->
+        <!--<item-->
+            <!--android:id="@+id/menu_how_to_reach1"-->
+            <!--android:icon="@drawable/icon_18"-->
+            <!--app:showAsAction="always"-->
+            <!--android:title="How to Reach"-->
+            <!--/>-->
+        <item
+            android:id="@+id/menu_how_to_reach"
+            android:icon="@drawable/ic_how_to_reach_icon_new12"
+            app:showAsAction="always"
+            android:title="How to Reach"
+             />
+        <item
+            android:id="@+id/menu_dos_donts"
+            android:icon="@drawable/ic_do_and_dont_icon_new12"
+            app:showAsAction="always"
+            android:title="Do's and Dont's" />
+        <item
+            android:id="@+id/menu_book_your_ticket"
+            android:icon="@drawable/ic_book_tickets12"
+            android:title="Book your ticket" />
+
+        <!--<item-->
+            <!--android:id="@+id/menu_butterflypark"-->
+            <!--android:icon="@drawable/buttefly_park"-->
+            <!--android:title="ButterFly Park" />-->
+        <item
+            android:id="@+id/menu_donate"
+            android:icon="@drawable/ic_donate_new12"
+            android:title="Donate" />
+        <item
+            android:id="@+id/menu_adopt"
+            android:icon="@drawable/ic_adopt_new12"
+            android:title="Adopt" />
+        <item
+            android:id="@+id/menu_attractions"
+            android:icon="@drawable/ic_attractions_icon_new12"
+            android:title="Attractions" />
+    </group>
+</menu>

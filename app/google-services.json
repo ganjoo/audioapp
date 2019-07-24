@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "806483822393",
+    "firebase_url": "https://lucknowzooandroid.firebaseio.com",
+    "project_id": "lucknowzooandroid",
+    "storage_bucket": "lucknowzooandroid.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:806483822393:android:96f5c79130201f6d",
+        "android_client_info": {
+          "package_name": "com.fplay.lucknowzoo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "806483822393-vem7d2bn063ev19r06383ji4eok1rjlh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fplay.lucknowzoo",
+            "certificate_hash": "e89c5401d4960943f131a3c0cca50bcd088a775c"
+          }
+        },
+        {
+          "client_id": "806483822393-32ubivo37odcb3vjhqjbk3jhhrlr1k4r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDha-L2rWL0bohrLw6yZcd8kPNNWW_YQg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "806483822393-32ubivo37odcb3vjhqjbk3jhhrlr1k4r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

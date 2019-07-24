@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_margin="@dimen/activity_horizontal_margin">
+
+
+    <TextView
+        android:id="@+id/vrtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/thumbnail"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:backgroundTint="@color/accent"
+        android:elevation="20dp"
+        android:fontFamily="casual"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/duck" />
+
+    <ImageButton
+        android:id="@+id/play_btn"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/video_play_icon" />
+
+    <ImageView
+        android:id="@+id/vrimg"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/player_progressBar"
+        android:layout_alignBottom="@+id/thumbnail"
+        android:layout_alignLeft="@+id/thumbnail"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:src="@drawable/vr_video_icon" />
+
+    <ProgressBar
+        android:id="@+id/player_progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/play_btn"
+        android:elevation="24dp" />
+
+    <TextView
+        android:id="@+id/vr_status_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/vrimg"
+        android:layout_alignStart="@+id/play_btn"
+        android:layout_alignTop="@+id/vrimg"
+        android:layout_below="@+id/player_progressBar"
+        android:layout_centerHorizontal="false"
+        android:layout_centerInParent="false"
+        android:layout_centerVertical="false"
+        android:backgroundTint="@color/accent"
+        android:elevation="20dp"
+        android:fontFamily="casual"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:typeface="serif" />
+
+</RelativeLayout>

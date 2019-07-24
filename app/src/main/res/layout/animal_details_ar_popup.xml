@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constrainedLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.8"
+        android:background="@drawable/sea" />
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_animal_description"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.6"
+        android:background="@drawable/ar_for_text_icon"
+        android:ellipsize="end"
+        android:maxLines="20"
+        android:paddingBottom="30pt"
+
+        android:paddingLeft="50pt"
+        android:paddingRight="30pt"
+
+        android:paddingTop="40pt"
+        android:scrollHorizontally="false"
+        android:scrollbars="vertical"
+        android:text="Hi My name is Hitesh Ganjoo Can we speak and I am here to tell you that this. This is to check the word wrapping on this control and see if this text spills like in Lucknow! My name is Hitesh Ganjoo Can we speak and I am here to tell you that this. This is to check the word wrapping on this control and see if this text spills like in Lucknow! My name is Hitesh Ganjoo Can we speak and I am here to tell you that this. This is to check the word wrapping on this control and see if this text spills like in Lucknow! My name is Hitesh Ganjoo Can we speak and I am here to tell you that this. This is to check the word wrapping on this control and see if this text spills like in Lucknow! My name is Hitesh Ganjoo Can we speak and I am here to tell you that this. This is to check the word wrapping on this control and see if this text spills like in Lucknow! My name is Hitesh Ganjoo Can we speak and I am here to tell you that this. This is to check the word wrapping on this control and see if this text spills like in Lucknow!"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/button_dismiss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:elevation="24dp"
+        android:text="BACK"
+        android:textSize="30sp" />
+
+
+</RelativeLayout>
+

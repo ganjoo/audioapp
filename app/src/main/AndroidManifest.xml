@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.fplay.audioapp">
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature android:glEsVersion="0x00020000" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!--
+         The application requires a camera.
+
+         NOTE: Any application that requests the CAMERA permission but does not
+         declare any camera features with the <uses-feature> element will be
+         assumed to use all camera features (auto-focus and flash). Thus, the
+         application will not be compatible with devices that do not support
+         all camera features. Please use <uses-feature> to declare only the
+         camera features that your application does need. For instance, if you
+         request the CAMERA permission, but you do not need auto-focus or
+         flash, then declare only the android.hardware.camera feature. The
+         other camera features that you do not request will no longer be
+         assumed as required.
+    -->
+    <uses-feature android:name="android.hardware.camera" /> <!-- Add this permission to get access to the camera. -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- Add this permission to allow opening network sockets. -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.fplay.audioapp.application.VrApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/zoologo"
+        android:label="@string/app_name"
+        android:largeHeap="false"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon,android:theme">
+        <activity android:name="com.fplay.audioapp.Attractions"></activity>
+        <activity android:name="com.fplay.audioapp.activities.SplashHelp" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <service
+            android:name="com.amazonaws.mobileconnectors.s3.transferutility.TransferService"
+            android:enabled="true" />
+
+        <activity
+            android:name="com.fplay.audioapp.activities.VrMainActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.fplay.audioapp.activities.VrActivityFeeds_"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity android:name="facetracker.FaceTrackerActivity" />
+        <activity android:name="com.fplay.audioapp.OcrCaptureActivity" />
+        <activity android:name="com.fplay.audioapp.activities.IntroPage_">
+
+        </activity> <!-- <activity android:name=".activities.OptionsPage_" /> -->
+        <activity
+            android:name="com.fplay.audioapp.activities.AudioMainPage"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.fplay.audioapp.activities.AudioDetailsPage_" />
+        <activity android:name="com.fplay.audioapp.activities.ARDetailsPage_" />
+        <activity
+            android:name="com.fplay.audioapp.activities.ARScanPage"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="unspecified" />
+        <activity
+            android:name="com.fplay.audioapp.activities.VRListPage_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.fplay.audioapp.activities.VRVideoDetailsPage_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.fplay.audioapp.activities.SimpleVrVideoActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.fplay.audioapp.utils.ImageViewTestActivity" />
+        <activity
+            android:name="com.fplay.audioapp.activities.ImageTargets.ImageTargets"
+            android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="ufobeacon.main.UFOBeaconActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="ufobeacon.main.BeaconDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="ufobeacon.main.EditBeaconActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="ufobeacon.main.AboutUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="ufobeacon.main.AppBaseActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="demo.MainActivity" />
+        <activity android:name="demo.BuildingPlansTileViewActivity" />
+        <activity android:name="demo.FictionalMapTileViewActivity" />
+        <activity android:name="demo.LargeImageTileViewActivity" />
+        <activity android:name="demo.RealMapTileViewActivity" />
+        <activity android:name="demo.RealMapInternetTileViewActivity" />
+        <activity
+            android:name="org.andresoviedo.app.model3D.MainActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="org.andresoviedo.app.model3D.view.MenuActivity"
+            android:label="@string/title_activity_menu"
+            android:parentActivityName="org.andresoviedo.app.model3D.MainActivity" />
+        <activity
+            android:name="org.andresoviedo.app.model3D.view.DemoActivity"
+            android:label="@string/title_activity_menu"
+            android:parentActivityName="org.andresoviedo.app.model3D.MainActivity" />
+        <activity
+            android:name="org.andresoviedo.app.util.view.TextActivity"
+            android:label="@string/title_activity_text"
+            android:parentActivityName="org.andresoviedo.app.model3D.MainActivity" />
+        <activity
+            android:name="org.andresoviedo.app.model3D.view.ModelActivity"
+            android:label="@string/title_activity_model"
+            android:parentActivityName="org.andresoviedo.app.model3D.MainActivity">
+
+            <!-- android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" -->
+        </activity>
+        <activity
+            android:name="com.fplay.audioapp.activities.VRVideoPlay"
+            android:screenOrientation="landscape" />
+        <activity android:name="com.fplay.audioapp.activities.CircuitPhotoActivity" />
+        <activity android:name="com.fplay.audioapp.BaseActivity" />
+        <activity
+            android:name="com.fplay.audioapp.WebViewActivity"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name="com.fplay.audioapp.activities.AboutUsPage_"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.fplay.audioapp.ContactUsActivity" />
+        <activity android:name="com.fplay.audioapp.Activity_visitors_info" />
+        <activity android:name="com.fplay.audioapp.DirectorsActivity" />
+        <activity
+            android:name="imageeditor.EditImageActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="cf03bc6b36e679325d61cdf4198ad67e6a2657dc" />
+
+        <activity android:name="com.fplay.audioapp.SelectARType" />
+        <activity android:name="com.fplay.audioapp.DisplaySignageInfo" />
+    </application>
+
+</manifest>

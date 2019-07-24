@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="advertiseInterval">
+        <item>100</item>
+        <item>200</item>
+        <item>300</item>
+        <item>400</item>
+        <item>500</item>
+        <item>600</item>
+        <item>700</item>
+        <item>800</item>
+        <item>900</item>
+        <item>1000</item>
+    </string-array>
+    <string-array name="txPower">
+        <item>-18</item>
+        <item>-12</item>
+        <item>-6</item>
+        <item>-3</item>
+        <item>-2</item>
+        <item>-1</item>
+        <item>0</item>
+        <item>+3</item>
+    </string-array>
+    <string-array name="rssiAt1meter">
+        <item>-92</item>
+        <item>-84</item>
+        <item>-72</item>
+        <item>-68</item>
+        <item>-67</item>
+        <item>-66</item>
+        <item>-65</item>
+        <item>-60</item>
+    </string-array>
+    <string-array name="txPowerLevel">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+    <string-array name="txPowerEddystone">
+        <item>-51</item>
+        <item>-33</item>
+        <item>-24</item>
+        <item>-21</item>
+    </string-array>
+    <string-array name="txPowerLevelEddystone">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+
+    </string-array>
+
+</resources>

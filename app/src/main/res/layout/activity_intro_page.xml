@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.IntroPage">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.8"
+        android:elevation="24dp"
+        android:visibility="invisible" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="10dp"
+        android:visibility="visible">
+
+    </android.support.v4.view.ViewPager>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:adjustViewBounds="false"
+        android:elevation="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/animals_intro" />
+
+    <ImageButton
+        android:id="@+id/enter_btn"
+        android:layout_width="217dp"
+        android:layout_height="62dp"
+        android:layout_gravity="bottom|center_horizontal"
+
+        android:background="@null"
+        android:elevation="24dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_btn_let_me_in_states" />
+
+</FrameLayout>
