@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.fplay.audioapp">
+
     <!-- To auto-complete the email text field in the login form with the user's emails -->
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
@@ -35,16 +36,13 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
-        android:name="com.fplay.audioapp.application.VrApplication"
+        android:name=".application.VrApplication"
         android:allowBackup="true"
         android:icon="@drawable/zoologo"
         android:label="@string/app_name"
         android:largeHeap="false"
         android:theme="@style/AppTheme"
         tools:replace="android:icon,android:theme">
-        <activity android:name="com.fplay.audioapp.Attractions"></activity>
-        <activity android:name="com.fplay.audioapp.activities.SplashHelp" />
-
         <provider
             android:name="android.support.v4.content.FileProvider"
             android:authorities="${applicationId}.provider"
@@ -60,45 +58,27 @@
             android:enabled="true" />
 
         <activity
-            android:name="com.fplay.audioapp.activities.VrMainActivity"
-            android:label="@string/app_name" />
-        <activity
-            android:name="com.fplay.audioapp.activities.VrActivityFeeds_"
+            android:name=".activities.VrActivityFeeds_"
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
-        <activity android:name="facetracker.FaceTrackerActivity" />
-        <activity android:name="com.fplay.audioapp.OcrCaptureActivity" />
-        <activity android:name="com.fplay.audioapp.activities.IntroPage_">
-
-        </activity> <!-- <activity android:name=".activities.OptionsPage_" /> -->
+        <activity android:name=".activities.IntroPage_"></activity> <!-- <activity android:name=".activities.OptionsPage_" /> -->
         <activity
-            android:name="com.fplay.audioapp.activities.AudioMainPage"
-            android:screenOrientation="portrait" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:name=".activities.AudioMainPage"
+            android:screenOrientation="portrait">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
-        <activity android:name="com.fplay.audioapp.activities.AudioDetailsPage_" />
-        <activity android:name="com.fplay.audioapp.activities.ARDetailsPage_" />
+        <activity android:name=".activities.AudioDetailsPage_" />
+        <activity android:name=".activities.ARDetailsPage_" />
         <activity
-            android:name="com.fplay.audioapp.activities.ARScanPage"
-            android:hardwareAccelerated="true"
-            android:screenOrientation="unspecified" />
-        <activity
-            android:name="com.fplay.audioapp.activities.VRListPage_"
+            android:name=".activities.VRListPage_"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.fplay.audioapp.activities.VRVideoDetailsPage_"
+            android:name=".activities.VRVideoDetailsPage_"
             android:screenOrientation="portrait" />
+        <activity android:name=".utils.ImageViewTestActivity" />
         <activity
-            android:name="com.fplay.audioapp.activities.SimpleVrVideoActivity"
-            android:screenOrientation="portrait" />
-        <activity android:name="com.fplay.audioapp.utils.ImageViewTestActivity" />
-        <activity
-            android:name="com.fplay.audioapp.activities.ImageTargets.ImageTargets"
+            android:name=".activities.ImageTargets.ImageTargets"
             android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize"
             android:launchMode="singleTask" />
         <activity
@@ -145,19 +125,8 @@
             <!-- android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" -->
         </activity>
         <activity
-            android:name="com.fplay.audioapp.activities.VRVideoPlay"
-            android:screenOrientation="landscape" />
-        <activity android:name="com.fplay.audioapp.activities.CircuitPhotoActivity" />
-        <activity android:name="com.fplay.audioapp.BaseActivity" />
-        <activity
-            android:name="com.fplay.audioapp.WebViewActivity"
-            android:hardwareAccelerated="true" />
-        <activity
-            android:name="com.fplay.audioapp.activities.AboutUsPage_"
+            android:name=".activities.AboutUsPage_"
             android:screenOrientation="portrait" />
-        <activity android:name="com.fplay.audioapp.ContactUsActivity" />
-        <activity android:name="com.fplay.audioapp.Activity_visitors_info" />
-        <activity android:name="com.fplay.audioapp.DirectorsActivity" />
         <activity
             android:name="imageeditor.EditImageActivity"
             android:screenOrientation="portrait" />
@@ -166,8 +135,13 @@
             android:name="io.fabric.ApiKey"
             android:value="cf03bc6b36e679325d61cdf4198ad67e6a2657dc" />
 
-        <activity android:name="com.fplay.audioapp.SelectARType" />
-        <activity android:name="com.fplay.audioapp.DisplaySignageInfo" />
+        <activity android:name=".activities.SplashMain">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

@@ -36,7 +36,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_toLeftOf="@+id/btnBuy"
+                android:paddingLeft="@dimen/button_press_elevation"
                 android:text="Bodh Gaya Audio Tour"
+                android:textAlignment="center"
                 android:textColor="@android:color/black"
                 android:textStyle="bold" />
 
@@ -44,7 +46,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/txtTitle"
-                android:text="Automatic Tour Guide" />
+                android:layout_centerInParent="true"
+                android:paddingLeft="@dimen/button_press_elevation"
+                android:text="Automatic Tour Guide"
+                android:textAlignment="textStart"
+                android:textSize="12sp" />
 
         </RelativeLayout>
     </LinearLayout>
